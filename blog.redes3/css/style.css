@@ -88,11 +88,11 @@ body {
 }
 
 .btn-hamburger {
-    /*display: none; */
-    background: none;
-    border: none;
-    color: var(--color-text);
-    cursor: pointer;   
+  display: none;
+  background: none;
+  border: none;
+  color: var(--color-text);
+  cursor: pointer;
 }
 
 /* Media Query aplicada a dispositivos móveis (de até 600px) */
@@ -107,21 +107,28 @@ body {
     align-items: flex-start;
     padding: 1rem;
     gap: 1rem;
+    position: relative;
+  }
+
+  .btn-hamburger {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    display: block;
   }
 
   .nav-links, .nav-actions {
     display: none;
   }
 
-  .open.nav-links .nav-links {
+  .open.nav-inner .nav-links {
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
 
-  .open.nav-links .nav-actions {
+  .open.nav-inner .nav-actions {
     display: block;
-
   }
 
 }

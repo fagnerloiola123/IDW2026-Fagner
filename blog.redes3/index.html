@@ -15,7 +15,7 @@
 <body>
 
     <header class="site-header">
-        <nav class="nav-inner open">
+        <nav class="nav-inner">
 
             <!-- Logo -->
             <a href="#" class="nav-logo">BlogTech</a>
@@ -41,6 +41,15 @@
 
         </nav>
     </header>
+
+    <script>
+        let menu = document.querySelector(".btn-hamburger");
+        let nav = document.querySelector(".nav-inner");
+
+        menu.addEventListener("click", () => {
+            nav.classList.toggle("open");
+        });
+    </script>
 
 </body>
 
